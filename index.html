@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageVault - Sender & Receiver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-green-400 font-mono text-center p-5 min-h-screen">
+    <h2 class="text-4xl font-extrabold mb-8 text-green-400 drop-shadow-[0_0_10px_rgba(0,255,0,0.8)] animate-pulse">
+        ImageVault - Hide Your Secrets in an Image
+    </h2>
+
+    <div class="mb-10">
+      <p class="text-lg font-medium mb-6">
+        Select your role
+      </p>
+      <a
+        href="front_send.html"
+        class="py-3 px-8 text-lg font-bold text-black bg-green-400 rounded-lg 
+        shadow-[0_0_10px_rgba(0,255,0,0.8)] hover:bg-black hover:text-green-400 
+        hover:shadow-[0_0_20px_rgba(0,255,0,1)] transition duration-300 mx-4 block md:inline-block "
+      >
+        Sender
+      </a>
+
+      <a
+        href="front_rec.html"
+        class="py-3 px-8 text-lg font-bold text-black bg-green-400 rounded-lg shadow-[0_0_10px_rgba(0,255,0,0.8)] hover:bg-black hover:text-green-400 hover:shadow-[0_0_20px_rgba(0,255,0,1)] transition duration-300 mx-4 block md:inline-block"
+      >
+        Receiver
+      </a>
+    </div>
+
+    <div id="senderSection" class="hidden-anchor text-lg text-green-400 mt-10 max-w-xl mx-auto">
+      <h3 class="text-3xl font-bold mb-4">Sender</h3>
+      <p>
+        As a <span class="font-bold ">Sender</span>, you can encrypt data and securely embed it into an image.
+      </p>
+    </div>
+
+    <div id="receiverSection" class="hidden-anchor text-lg text-green-400 mt-10 max-w-xl mx-auto">
+      <h3 class="text-3xl font-bold mb-4">Receiver</h3>
+      <p>
+        As a <span class="font-bold">Receiver</span>, you can extract encrypted data from an image securely.
+      </p>
+    </div>
+  </body>
+</html>
